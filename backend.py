@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 USER_ID  = "ashirvad_singh_29122004" # Replace with your actual user_id, e.g., "john_doe_17091999"
 EMAIL_ID  = "22bai71191@cuchd.in" # Replace with your actual college email ID, e.g., "john@xyz.com"
